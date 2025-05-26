@@ -1,9 +1,33 @@
-<h1 align="center">Hi 👋, I'm soheil</h1>
-<h3 align="center">### 🧑‍💻 Backend Developer | Python & Django Enthusiast | Future Cybersecurity Expert</h3>
+# 👋 Hi, I’m Soheil!
+### 🧑‍💻 Developer | Python Enthusiast | Future Cybersecurity Expert
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
+passionate about:
+- 🛠 Backend development (Django, FastAPI)
+- 🔐 Cybersecurity & Ethical Hacking
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://backbonejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/backbonejs/backbonejs-original-wordmark.svg" alt="backbonejs" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> </p>
+---
+
+## 🚀 My Tech Stack
+
+![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat-square)
+![HTML](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&style=flat-square)
+![CSS](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&style=flat-square)
+![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white&style=flat-square)
+
+---
+
+## 🧠 Current Goals
+
+- 📚 Master Django & build real projects (like Digikala clone)
+- 📡 Learn networking & security
+- 🎓 Prepare for IELTS & improve my English
+---
+
+## 📫 How to reach me
+
+- [Email](mailto:soheilll.2006@gmail.com)
+- [LinkedIn](https://linkedin.com/in/your-profile)
+
+---
+
+_“Consistency is what transforms average into excellence.”_
