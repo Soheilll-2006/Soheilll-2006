@@ -1,33 +1,65 @@
-# 👋 Hi, I’m Soheil!
-### 🧑‍💻 Developer | Python Enthusiast | Future Cybersecurity Expert
+<h1 align="center">👋 Hi, I’m Soheil</h1>
+<h3 align="center">💻 Developer | Self-Development Enthusiast | Future Cybersecurity Expert</h3>
 
-passionate about:
-- 🛠 Backend development (Django, FastAPI)
-- 🔐 Cybersecurity & Ethical Hacking
-
----
-
-## 🚀 My Tech Stack
-
-![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat-square)
-![HTML](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&style=flat-square)
-![CSS](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&style=flat-square)
-![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white&style=flat-square)
+<p align="center">
+  <a href="mailto:soheilll.2006@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="https://linkedin.com/in/your-profile"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+</p>
 
 ---
 
-## 🧠 Current Goals
+## 🔥 About Me
 
-- 📚 Master Django & build real projects (like Digikala clone)
-- 📡 Learn networking & security
-- 🎓 Prepare for IELTS & improve my English
+- 🛠 Focused on mastering:
+  - Python & JavaScript
+  - Linux fundamentals
+  - Networking & cybersecurity
+  - Web development (HTML, CSS, SQL)
+- 🧠 Passionate about self-growth, discipline, and learning deeply, not just fast
+- 🧩 I love understanding how systems work — from code to networks to human behavior
+- 🕶️ Currently building my foundation as a future backend developer & security specialist
+
 ---
 
-## 📫 How to reach me
+## 🧰 Tech Stack
 
-- [Email](mailto:soheilll.2006@gmail.com)
-- [LinkedIn](https://linkedin.com/in/your-profile)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+</p>
 
 ---
 
-_“Consistency is what transforms average into excellence.”_
+## 🎯 Current Focus
+
+- 💻 Reviewing and mastering Python with real projects
+- 🌐 Learning computer networking for cybersecurity
+- 🧠 Building strong fundamentals in Linux and system operations
+- 🧪 Practicing SQL and backend logic for data management
+- 🧱 Developing full-stack thinking: from front to backend systems
+
+---
+
+## 🧠 Personal Growth Philosophy
+
+> "Discipline beats motivation. Every. Single. Time."
+
+- 📖 I believe in small daily progress over big random bursts.
+- 🧘 I work on consistency, focus, and mental toughness like any other skill.
+- 🔁 I follow structured routines that blend technical learning with personal growth.
+- 🧠 My favorite hobbies: deep learning (not the AI one!), reading, hacking-themed challenges, and organizing chaos into systems.
+
+---
+
+## 💬 Let's Connect
+
+📬 Email: [soheilll.2006@gmail.com](mailto:soheilll.2006@gmail.com)  
+🔗 LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+
+---
+
+<p align="center"><em>"Stay curious, stay consistent, stay sharp."</em></p>
