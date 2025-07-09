@@ -56,7 +56,7 @@
 ## 💬 Let's Connect
 
 📬 Email: [soheilll.2006@gmail.com](mailto:soheilll.2006@gmail.com)  
-🔗 LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+🔗 LinkedIn: [https://www.linkedin.com/in/soheilll2006/](https://www.linkedin.com/in/soheilll2006/)
 
 ---
 
