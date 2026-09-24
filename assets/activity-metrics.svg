@@ -411,13 +411,4 @@
 <rect x="1072" y="297" width="13" height="13" rx="3" fill="#0E4D64"/>
 <rect x="1072" y="312" width="13" height="13" rx="3" fill="#0E4D64"/>
 <rect x="1072" y="327" width="13" height="13" rx="3" fill="#0E4D64"/>
-<g transform="translate(1036 360)">
-  <text x="-54" y="10" fill="#607894" font-size="10" font-family="Consolas,monospace">LESS</text>
-  <rect x="0" y="0" width="12" height="12" rx="3" fill="#132238"/>
-  <rect x="20" y="0" width="12" height="12" rx="3" fill="#0E4D64"/>
-  <rect x="40" y="0" width="12" height="12" rx="3" fill="#087E8B"/>
-  <rect x="60" y="0" width="12" height="12" rx="3" fill="#20BFC6"/>
-  <rect x="80" y="0" width="12" height="12" rx="3" fill="#5AE8E8"/>
-  <text x="106" y="10" fill="#607894" font-size="10" font-family="Consolas,monospace">MORE</text>
-</g>
 </svg>
