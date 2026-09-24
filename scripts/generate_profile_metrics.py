@@ -12,18 +12,17 @@ OUT = Path("assets/activity-metrics.svg")
 
 today = datetime.now(timezone.utc).date()
 year_start = date(today.year, 1, 1)
+lookback_start = today - timedelta(days=364)
 
 query = """
-query($login: String!, $from: DateTime!, $to: DateTime!) {
+query($login: String!, $ytdFrom: DateTime!, $lookbackFrom: DateTime!, $to: DateTime!) {
   user(login: $login) {
-    createdAt
     repositories(ownerAffiliations: OWNER, privacy: PUBLIC) { totalCount }
-    contributionsCollection(from: $from, to: $to) {
+    ytd: contributionsCollection(from: $ytdFrom, to: $to) {
       totalCommitContributions
-      totalIssueContributions
-      totalPullRequestContributions
-      totalPullRequestReviewContributions
-      restrictedContributionsCount
+      contributionCalendar { totalContributions }
+    }
+    lookback: contributionsCollection(from: $lookbackFrom, to: $to) {
       contributionCalendar {
         totalContributions
         weeks {
@@ -42,7 +41,8 @@ payload = json.dumps({
     "query": query,
     "variables": {
         "login": USERNAME,
-        "from": year_start.isoformat() + "T00:00:00Z",
+        "ytdFrom": year_start.isoformat() + "T00:00:00Z",
+        "lookbackFrom": lookback_start.isoformat() + "T00:00:00Z",
         "to": today.isoformat() + "T23:59:59Z",
     },
 }).encode()
@@ -64,14 +64,15 @@ if result.get("errors"):
     raise RuntimeError(result["errors"])
 
 user = result["data"]["user"]
-cc = user["contributionsCollection"]
-calendar = cc["contributionCalendar"]
+ytd = user["ytd"]
+lookback = user["lookback"]
+calendar = lookback["contributionCalendar"]
 
 days = []
 for week in calendar["weeks"]:
     for d in week["contributionDays"]:
         dt = date.fromisoformat(d["date"])
-        if year_start <= dt <= today:
+        if lookback_start <= dt <= today:
             days.append((dt, int(d["contributionCount"])))
 days.sort()
 
@@ -81,7 +82,7 @@ active_days = sum(1 for _, count in days if count > 0)
 def streak_ending(anchor):
     streak = 0
     d = anchor
-    while d >= year_start and day_map.get(d, 0) > 0:
+    while d >= lookback_start and day_map.get(d, 0) > 0:
         streak += 1
         d -= timedelta(days=1)
     return streak
@@ -92,48 +93,53 @@ if current_streak == 0:
 
 longest = 0
 running = 0
-for d, count in days:
+for _, count in days:
     if count > 0:
         running += 1
         longest = max(longest, running)
     else:
         running = 0
 
-contribs = int(calendar["totalContributions"])
-commits = int(cc["totalCommitContributions"])
+contribs_ytd = int(ytd["contributionCalendar"]["totalContributions"])
+public_commits_ytd = int(ytd["totalCommitContributions"])
 public_repos = int(user["repositories"]["totalCount"])
 
-# recent 26 weeks, Monday-aligned
-heat_end = today
-heat_start = heat_end - timedelta(days=181)
+# 52-week Monday-aligned heatmap.
+heat_start = today - timedelta(days=363)
 heat_start -= timedelta(days=heat_start.weekday())
-heat_dates = []
-d = heat_start
-while d <= heat_end:
-    heat_dates.append(d)
-    d += timedelta(days=1)
+weeks = []
+cursor = heat_start
+while cursor <= today:
+    weeks.append(cursor)
+    cursor += timedelta(days=7)
+weeks = weeks[-52:]
 
-counts = [day_map.get(d, 0) for d in heat_dates]
-max_count = max(counts or [0])
+visible_counts = []
+for monday in weeks:
+    for dow in range(7):
+        d = monday + timedelta(days=dow)
+        if d <= today:
+            visible_counts.append(day_map.get(d, 0))
+max_count = max(visible_counts or [0])
 
 def heat_color(n):
     if n <= 0:
         return "#132238"
     ratio = n / max_count if max_count else 0
-    if ratio <= .25:
+    if ratio <= .20:
         return "#0E4D64"
-    if ratio <= .5:
+    if ratio <= .45:
         return "#087E8B"
-    if ratio <= .75:
+    if ratio <= .70:
         return "#20BFC6"
     return "#5AE8E8"
 
 W, H = 1200, 390
 cards = [
-    ("CONTRIBUTIONS", f"{contribs:,}", "year to date", "#58A6FF"),
-    ("COMMITS", f"{commits:,}", "year to date", "#2DE2E6"),
-    ("CURRENT STREAK", f"{current_streak}d", f"longest {longest}d YTD", "#7EE787"),
-    ("ACTIVE DAYS", f"{active_days}", f"{public_repos} public repos", "#F2CC60"),
+    ("CONTRIBUTIONS", f"{contribs_ytd:,}", "year to date", "#58A6FF"),
+    ("PUBLIC COMMITS", f"{public_commits_ytd:,}", "year to date", "#2DE2E6"),
+    ("CURRENT STREAK", f"{current_streak}d", f"longest {longest}d · last 365d", "#7EE787"),
+    ("ACTIVE DAYS", f"{active_days}", f"last 365d · {public_repos} public repos", "#F2CC60"),
 ]
 
 parts = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" fill="none">
@@ -155,7 +161,7 @@ parts = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" vi
 <rect width="{W}" height="{H}" rx="28" fill="url(#dots)"/>
 <rect x="1" y="1" width="{W-2}" height="{H-2}" rx="27" stroke="#25415F" stroke-opacity=".85"/>
 <text x="52" y="48" fill="#FFFFFF" font-size="24" font-weight="750" font-family="Inter,Segoe UI,Arial,sans-serif">ACTIVITY PULSE</text>
-<text x="52" y="72" fill="#6F86A1" font-size="13" font-family="Consolas,monospace">generated from GitHub contribution data · {escape(today.isoformat())}</text>
+<text x="52" y="72" fill="#6F86A1" font-size="13" font-family="Consolas,monospace">live GitHub contribution data · refreshed {escape(today.isoformat())}</text>
 <rect x="52" y="85" width="170" height="3" rx="2" fill="url(#rail)"/>
 ''']
 
@@ -170,36 +176,32 @@ for i, (label, value, sub, color) in enumerate(cards):
   <text x="22" y="94" fill="#6F86A1" font-size="12" font-family="Inter,Segoe UI,Arial,sans-serif">{escape(sub)}</text>
 </g>''')
 
-parts.append('''<text x="52" y="264" fill="#FFFFFF" font-size="16" font-weight="700" font-family="Inter,Segoe UI,Arial,sans-serif">LAST 26 WEEKS</text>
-<text x="1148" y="264" text-anchor="end" fill="#607894" font-size="11" font-family="Consolas,monospace">less  ·  more</text>''')
+parts.append('''<text x="52" y="264" fill="#FFFFFF" font-size="16" font-weight="700" font-family="Inter,Segoe UI,Arial,sans-serif">LAST 52 WEEKS</text>
+<text x="1148" y="264" text-anchor="end" fill="#607894" font-size="11" font-family="Consolas,monospace">contribution intensity</text>''')
 
-cell = 12
-gap = 4
+cell = 13
+gap = 7
 x0 = 52
-y0 = 286
-weeks = {}
-for d in heat_dates:
-    monday = d - timedelta(days=d.weekday())
-    weeks.setdefault(monday, []).append(d)
-week_keys = sorted(weeks)[-26:]
-
-for wi, monday in enumerate(week_keys):
+y0 = 282
+for wi, monday in enumerate(weeks):
     for dow in range(7):
         d = monday + timedelta(days=dow)
         if d > today:
             continue
         n = day_map.get(d, 0)
         x = x0 + wi * (cell + gap)
-        y = y0 + dow * (cell + gap)
-        color = heat_color(n)
-        parts.append(f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="3" fill="{color}"/>')
+        y = y0 + dow * (cell + 2)
+        parts.append(f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="3" fill="{heat_color(n)}"/>')
 
-parts.append('''<g transform="translate(1010 286)">
+legend_x = 1036
+parts.append(f'''<g transform="translate({legend_x} 360)">
+  <text x="-54" y="10" fill="#607894" font-size="10" font-family="Consolas,monospace">LESS</text>
   <rect x="0" y="0" width="12" height="12" rx="3" fill="#132238"/>
   <rect x="20" y="0" width="12" height="12" rx="3" fill="#0E4D64"/>
   <rect x="40" y="0" width="12" height="12" rx="3" fill="#087E8B"/>
   <rect x="60" y="0" width="12" height="12" rx="3" fill="#20BFC6"/>
   <rect x="80" y="0" width="12" height="12" rx="3" fill="#5AE8E8"/>
+  <text x="106" y="10" fill="#607894" font-size="10" font-family="Consolas,monospace">MORE</text>
 </g>
 </svg>''')
 
