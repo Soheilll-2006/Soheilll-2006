@@ -49,7 +49,7 @@ focus:
   - browser workflows
   - Flutter products
 shipping:
-  - Divan Khial
+  - open-source tools
   - automation systems
 ```
 
@@ -68,84 +68,49 @@ shipping:
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 ### 01 · [x-timeline-crawler](https://github.com/Soheilll-2006/x-timeline-crawler)
 
 **GraphQL timeline fetcher + watcher for X**
 
-Python CLI/library for snapshotting and continuously monitoring timelines with persistent state and machine-friendly output.
+Snapshot + continuous watch modes with persistent state and pipeline-friendly output.
 
-```text
-snapshot / watch modes
-cookie-file sessions
-persistent seen-state
-JSON + JSONL pipelines
-fallback handling
-```
+<sub><code>Python</code> · <code>GraphQL</code> · <code>CLI</code></sub>
+
+<br/><br/>
 
 [**→ Open repository**](https://github.com/Soheilll-2006/x-timeline-crawler)
 
 </td>
-<td width="50%" valign="top">
+<td width="34%" valign="top">
 
 ### 02 · [content_automation_core](https://github.com/Soheilll-2006/content_automation_core)
 
 **Production-minded browser automation**
 
-A hardened toolkit for long-running content workflows where browser hangs, stale sessions and teardown failures actually matter.
+Hardened long-running workflows with bounded calls, cleanup and explicit failure handling.
 
-```text
-bounded WebDriver calls
-global timeout controls
-safe process cleanup
-Playwright + Selenium
-observability hooks
-```
+<sub><code>Python</code> · <code>Selenium</code> · <code>Playwright</code></sub>
+
+<br/><br/>
 
 [**→ Open repository**](https://github.com/Soheilll-2006/content_automation_core)
 
 </td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 ### 03 · [Relationship Telegram Bot](https://github.com/Soheilll-2006/Relationship_telegram_bot)
 
 **Bilingual scheduled Telegram product**
 
-Persian/English companion bot with onboarding, reminders, mood tracking, milestones, streaks and timezone-aware jobs.
+Onboarding, reminders, mood tracking, milestones, streaks and timezone-aware jobs.
 
-```text
-Telegram Bot API
-SQLite persistence
-APScheduler
-bilingual UX
-scheduled delivery
-```
+<sub><code>Python</code> · <code>SQLite</code> · <code>APScheduler</code></sub>
+
+<br/><br/>
 
 [**→ Open repository**](https://github.com/Soheilll-2006/Relationship_telegram_bot)
-
-</td>
-<td width="50%" valign="top">
-
-### 04 · Divan Khial
-
-**Production Persian poetry audio product**
-
-A Flutter product around Persian poetry, narrated literature and long-form audio.
-
-```text
-Flutter + Dart
-audio playback
-offline behavior
-API integrations
-release engineering
-product iteration
-```
-
-<sub>Core repository is private.</sub>
 
 </td>
 </tr>
@@ -153,7 +118,48 @@ product iteration
 
 ---
 
-<img src="./assets/activity-metrics.svg" width="100%" alt="Soheil GitHub contribution metrics and streak"/>
+<!-- activity:start -->
+<div align="center">
+
+## Activity
+
+<sub>Live GitHub data · refreshed automatically</sub>
+
+<table>
+<tr>
+<td align="center" width="25%">
+<a href="https://github.com/Soheilll-2006?tab=overview" title="6,042 contributions year to date">
+<strong>6,042</strong><br/>
+<sub>Contributions YTD</sub>
+</a>
+</td>
+<td align="center" width="25%">
+<a href="https://github.com/search?q=author%3ASoheilll-2006&type=commits" title="29 public commits year to date">
+<strong>29</strong><br/>
+<sub>Public Commits YTD</sub>
+</a>
+</td>
+<td align="center" width="25%">
+<a href="https://github.com/Soheilll-2006?tab=overview" title="Current streak: 6 days · longest in last 365 days: 14 days">
+<strong>6 days</strong><br/>
+<sub>Current Streak</sub>
+</a>
+</td>
+<td align="center" width="25%">
+<a href="https://github.com/Soheilll-2006?tab=overview" title="87 active contribution days in the last 365 days">
+<strong>87</strong><br/>
+<sub>Active Days · 365d</sub>
+</a>
+</td>
+</tr>
+</table>
+
+<a href="https://github.com/Soheilll-2006?tab=overview" title="Open GitHub's native interactive contribution calendar">
+<strong>↗ Open interactive contribution graph</strong>
+</a>
+
+</div>
+<!-- activity:end -->
 
 <br/>
 
@@ -201,7 +207,7 @@ product iteration
 
 ### `signal > decoration`
 
-<sub>Activity metrics are generated from GitHub data and committed locally — no third-party stats image dependency.</sub>
+<sub>Metrics above are clickable. Hover for context; click through to GitHub's native activity views.</sub>
 
 <br/><br/>
 
