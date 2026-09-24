@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" fill="none">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1200" y2="390"><stop stop-color="#07111F"/><stop offset="1" stop-color="#0A1C31"/></linearGradient></defs>
+<rect width="1200" height="390" rx="28" fill="url(#bg)"/>
+<rect x="1" y="1" width="1198" height="388" rx="27" stroke="#25415F"/>
+<text x="52" y="52" fill="#FFFFFF" font-size="24" font-weight="700" font-family="Inter,Segoe UI,Arial,sans-serif">ACTIVITY PULSE</text>
+<text x="52" y="80" fill="#6F86A1" font-size="14" font-family="Consolas,monospace">GitHub metrics are syncing…</text>
+<g transform="translate(52 120)" font-family="Inter,Segoe UI,Arial,sans-serif">
+  <rect width="1096" height="190" rx="22" fill="#0C1C31" stroke="#284664"/>
+  <circle cx="548" cy="76" r="18" fill="none" stroke="#2DE2E6" stroke-width="4" stroke-dasharray="22 12"/>
+  <text x="548" y="130" text-anchor="middle" fill="#91A8C2" font-size="16">waiting for the first GitHub Actions refresh</text>
+</g>
+</svg>
