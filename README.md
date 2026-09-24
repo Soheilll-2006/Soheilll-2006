@@ -123,7 +123,7 @@ Onboarding, reminders, mood tracking, milestones, streaks and timezone-aware job
 
 ## Activity
 
-<sub>Live GitHub data · refreshed automatically</sub>
+<sub>Live GitHub data · refreshed 2026-09-24</sub>
 
 <table>
 <tr>
