@@ -153,6 +153,10 @@ product iteration
 
 ---
 
+<img src="./assets/activity-metrics.svg" width="100%" alt="Soheil GitHub contribution metrics and streak"/>
+
+<br/>
+
 <img src="./assets/stack-map.svg" width="100%" alt="Soheil technology map"/>
 
 ---
@@ -195,9 +199,9 @@ product iteration
 
 <div align="center">
 
-### `real work > pretty widgets`
+### `signal > decoration`
 
-<sub>No flaky stats cards here. The repositories are the signal.</sub>
+<sub>Activity metrics are generated from GitHub data and committed locally — no third-party stats image dependency.</sub>
 
 <br/><br/>
 
