@@ -118,48 +118,33 @@ Onboarding, reminders, mood tracking, milestones, streaks and timezone-aware job
 
 ---
 
-<!-- activity:start -->
 <div align="center">
 
-## Activity
+## Coding Activity
 
-<sub>Live GitHub data · refreshed 2026-09-24</sub>
+<sub>streaks · contributions · consistency</sub>
 
-<table>
-<tr>
-<td align="center" width="25%">
-<a href="https://github.com/Soheilll-2006?tab=overview" title="6,042 contributions year to date">
-<strong>6,042</strong><br/>
-<sub>Contributions YTD</sub>
-</a>
-</td>
-<td align="center" width="25%">
-<a href="https://github.com/search?q=author%3ASoheilll-2006&type=commits" title="29 public commits year to date">
-<strong>29</strong><br/>
-<sub>Public Commits YTD</sub>
-</a>
-</td>
-<td align="center" width="25%">
-<a href="https://github.com/Soheilll-2006?tab=overview" title="Current streak: 6 days · longest in last 365 days: 14 days">
-<strong>6 days</strong><br/>
-<sub>Current Streak</sub>
-</a>
-</td>
-<td align="center" width="25%">
-<a href="https://github.com/Soheilll-2006?tab=overview" title="87 active contribution days in the last 365 days">
-<strong>87</strong><br/>
-<sub>Active Days · 365d</sub>
-</a>
-</td>
-</tr>
-</table>
+<br/>
 
-<a href="https://github.com/Soheilll-2006?tab=overview" title="Open GitHub's native interactive contribution calendar">
-<strong>↗ Open interactive contribution graph</strong>
+<a href="https://github.com/Soheilll-2006?tab=overview" title="Open Soheil's GitHub contribution history">
+  <img
+    src="https://streak-stats.demolab.com?user=Soheilll-2006&theme=github-dark-blue&hide_border=true&background=00000000&ring=2DE2E6&fire=58A6FF&currStreakLabel=2DE2E6&sideLabels=8EA5BF&dates=6F86A1&sideNums=FFFFFF&currStreakNum=FFFFFF"
+    width="68%"
+    alt="GitHub contribution streak"
+  />
+</a>
+
+<br/><br/>
+
+<a href="https://github.com/Soheilll-2006?tab=overview" title="Open the interactive contribution calendar on GitHub">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Soheilll-2006/Soheilll-2006/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Soheilll-2006/Soheilll-2006/output/github-contribution-grid-snake.svg" />
+  <img width="100%" alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/Soheilll-2006/Soheilll-2006/output/github-contribution-grid-snake.svg" />
+</picture>
 </a>
 
 </div>
-<!-- activity:end -->
 
 <br/>
 
@@ -205,9 +190,9 @@ Onboarding, reminders, mood tracking, milestones, streaks and timezone-aware job
 
 <div align="center">
 
-### `signal > decoration`
+### `build consistently · ship deliberately`
 
-<sub>Metrics above are clickable. Hover for context; click through to GitHub's native activity views.</sub>
+<sub>The contribution snake updates automatically from GitHub activity.</sub>
 
 <br/><br/>
 
