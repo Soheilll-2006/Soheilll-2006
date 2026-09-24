@@ -148,7 +148,7 @@ Onboarding, reminders, mood tracking, milestones, streaks and timezone-aware job
 
 <br/>
 
-<img src="./assets/stack-map.svg" width="100%" alt="Soheil technology map"/>
+<img src="./assets/tech-map.svg" width="100%" alt="Soheil technology map"/>
 
 ---
 
