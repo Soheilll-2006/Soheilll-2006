@@ -193,17 +193,7 @@ for wi, monday in enumerate(weeks):
         y = y0 + dow * (cell + 2)
         parts.append(f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="3" fill="{heat_color(n)}"/>')
 
-legend_x = 1036
-parts.append(f'''<g transform="translate({legend_x} 360)">
-  <text x="-54" y="10" fill="#607894" font-size="10" font-family="Consolas,monospace">LESS</text>
-  <rect x="0" y="0" width="12" height="12" rx="3" fill="#132238"/>
-  <rect x="20" y="0" width="12" height="12" rx="3" fill="#0E4D64"/>
-  <rect x="40" y="0" width="12" height="12" rx="3" fill="#087E8B"/>
-  <rect x="60" y="0" width="12" height="12" rx="3" fill="#20BFC6"/>
-  <rect x="80" y="0" width="12" height="12" rx="3" fill="#5AE8E8"/>
-  <text x="106" y="10" fill="#607894" font-size="10" font-family="Consolas,monospace">MORE</text>
-</g>
-</svg>''')
+parts.append('''</svg>''')
 
 OUT.parent.mkdir(parents=True, exist_ok=True)
 OUT.write_text("\n".join(parts), encoding="utf-8")
