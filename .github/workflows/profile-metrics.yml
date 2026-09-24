@@ -6,7 +6,7 @@ on:
       - main
       - profile-redesign-2026
     paths-ignore:
-      - assets/activity-metrics.svg
+      - README.md
   schedule:
     - cron: "17 2 * * *"
   workflow_dispatch:
@@ -28,7 +28,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Generate local activity SVG
+      - name: Refresh clickable activity metrics
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PROFILE_USERNAME: Soheilll-2006
@@ -37,13 +37,13 @@ jobs:
       - name: Commit refreshed metrics
         shell: bash
         run: |
-          if git diff --quiet -- assets/activity-metrics.svg; then
+          if git diff --quiet -- README.md; then
             echo "Metrics are already current."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/activity-metrics.svg
+          git add README.md
           git commit -m "chore: refresh profile activity metrics [skip ci]"
           git push
