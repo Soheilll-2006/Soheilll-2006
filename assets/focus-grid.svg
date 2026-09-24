@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="278" viewBox="0 0 1200 278" fill="none">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="278" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#07111F"/>
+    <stop offset="1" stop-color="#0A1C31"/>
+  </linearGradient>
+  <linearGradient id="a" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#58A6FF"/>
+    <stop offset="1" stop-color="#2DE2E6"/>
+  </linearGradient>
+  <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#6D86A4" fill-opacity=".13"/>
+  </pattern>
+</defs>
+<rect width="1200" height="278" rx="28" fill="url(#bg)"/>
+<rect width="1200" height="278" rx="28" fill="url(#dots)"/>
+<rect x="1" y="1" width="1198" height="276" rx="27" stroke="#25415F" stroke-opacity=".8"/>
+
+<text x="52" y="48" fill="#FFFFFF" font-size="24" font-weight="750" font-family="Inter,Segoe UI,Arial,sans-serif">CORE FOCUS</text>
+<text x="52" y="72" fill="#6F86A1" font-size="13" font-family="Consolas,monospace">what I actually spend time building</text>
+<rect x="52" y="84" width="122" height="3" rx="2" fill="url(#a)"/>
+
+<g transform="translate(52 112)">
+  <rect width="256" height="118" rx="20" fill="#0C1C31" stroke="#284664"/>
+  <g transform="translate(22 20)" stroke="#7EE787" stroke-width="2" fill="none" stroke-linecap="round">
+    <circle cx="18" cy="18" r="10"/><path d="M18 2v6M18 28v6M2 18h6M28 18h6M7 7l4 4M25 25l4 4M29 7l-4 4M11 25l-4 4"/>
+  </g>
+  <text x="22" y="76" fill="#FFFFFF" font-size="21" font-weight="700" font-family="Inter,Segoe UI,Arial,sans-serif">Automation</text>
+  <text x="22" y="99" fill="#8EA5BF" font-size="13" font-family="Inter,Segoe UI,Arial,sans-serif">browser flows · jobs · orchestration</text>
+</g>
+
+<g transform="translate(332 112)">
+  <rect width="256" height="118" rx="20" fill="#0C1C31" stroke="#284664"/>
+  <g transform="translate(22 20)" stroke="#58A6FF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 8h28v22H5z"/><path d="M10 14h18M10 20h10M10 26h14"/>
+  </g>
+  <text x="22" y="76" fill="#FFFFFF" font-size="21" font-weight="700" font-family="Inter,Segoe UI,Arial,sans-serif">Backend Tooling</text>
+  <text x="22" y="99" fill="#8EA5BF" font-size="13" font-family="Inter,Segoe UI,Arial,sans-serif">APIs · failure handling · observability</text>
+</g>
+
+<g transform="translate(612 112)">
+  <rect width="256" height="118" rx="20" fill="#0C1C31" stroke="#284664"/>
+  <g transform="translate(22 20)" stroke="#2DE2E6" stroke-width="2" fill="none" stroke-linecap="round">
+    <circle cx="19" cy="19" r="7"/><circle cx="5" cy="8" r="3"/><circle cx="34" cy="7" r="3"/><circle cx="5" cy="31" r="3"/><circle cx="34" cy="32" r="3"/>
+    <path d="M11 11l4 4M27 14l4-4M11 28l4-4M27 25l4 4"/>
+  </g>
+  <text x="22" y="76" fill="#FFFFFF" font-size="21" font-weight="700" font-family="Inter,Segoe UI,Arial,sans-serif">Crawlers</text>
+  <text x="22" y="99" fill="#8EA5BF" font-size="13" font-family="Inter,Segoe UI,Arial,sans-serif">GraphQL · async fetch · extraction</text>
+</g>
+
+<g transform="translate(892 112)">
+  <rect width="256" height="118" rx="20" fill="#0C1C31" stroke="#284664"/>
+  <g transform="translate(22 19)" stroke="#F2CC60" stroke-width="2" fill="none">
+    <rect x="8" y="2" width="22" height="35" rx="5"/><path d="M15 31h8"/>
+  </g>
+  <text x="22" y="76" fill="#FFFFFF" font-size="21" font-weight="700" font-family="Inter,Segoe UI,Arial,sans-serif">Flutter Products</text>
+  <text x="22" y="99" fill="#8EA5BF" font-size="13" font-family="Inter,Segoe UI,Arial,sans-serif">mobile UX · audio · releases</text>
+</g>
+</svg>
