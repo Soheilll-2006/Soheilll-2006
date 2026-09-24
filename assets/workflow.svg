@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" fill="none">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="190" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#07111F"/>
+    <stop offset="1" stop-color="#0A1C31"/>
+  </linearGradient>
+  <linearGradient id="rail" x1="118" y1="93" x2="1080" y2="93" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#58A6FF"/>
+    <stop offset=".35" stop-color="#2DE2E6"/>
+    <stop offset=".68" stop-color="#7EE787"/>
+    <stop offset="1" stop-color="#F2CC60"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="190" rx="28" fill="url(#bg)"/>
+<rect x="1" y="1" width="1198" height="188" rx="27" stroke="#25415F" stroke-opacity=".8"/>
+<text x="52" y="42" fill="#FFFFFF" font-size="20" font-weight="750" font-family="Inter,Segoe UI,Arial,sans-serif">MY LOOP</text>
+<text x="1148" y="42" text-anchor="end" fill="#637B97" font-size="12" font-family="Consolas,monospace">repeat until boring becomes reliable</text>
+
+<path d="M120 92H1080" stroke="#18314D" stroke-width="8" stroke-linecap="round"/>
+<path d="M120 92H1080" stroke="url(#rail)" stroke-width="3" stroke-linecap="round"/>
+
+<g font-family="Inter,Segoe UI,Arial,sans-serif" text-anchor="middle">
+  <g transform="translate(120 92)"><circle r="20" fill="#0F2746" stroke="#58A6FF" stroke-width="3"/><text y="5" fill="#58A6FF" font-size="12" font-weight="800">01</text><text y="54" fill="#FFFFFF" font-size="15" font-weight="700">BUILD</text></g>
+  <g transform="translate(360 92)"><circle r="20" fill="#0F2746" stroke="#2DE2E6" stroke-width="3"/><text y="5" fill="#2DE2E6" font-size="12" font-weight="800">02</text><text y="54" fill="#FFFFFF" font-size="15" font-weight="700">BREAK</text></g>
+  <g transform="translate(600 92)"><circle r="20" fill="#0F2746" stroke="#7EE787" stroke-width="3"/><text y="5" fill="#7EE787" font-size="12" font-weight="800">03</text><text y="54" fill="#FFFFFF" font-size="15" font-weight="700">UNDERSTAND</text></g>
+  <g transform="translate(840 92)"><circle r="20" fill="#0F2746" stroke="#F2CC60" stroke-width="3"/><text y="5" fill="#F2CC60" font-size="12" font-weight="800">04</text><text y="54" fill="#FFFFFF" font-size="15" font-weight="700">SIMPLIFY</text></g>
+  <g transform="translate(1080 92)"><circle r="20" fill="#0F2746" stroke="#FF7B72" stroke-width="3"/><text y="5" fill="#FF7B72" font-size="12" font-weight="800">05</text><text y="54" fill="#FFFFFF" font-size="15" font-weight="700">SHIP</text></g>
+</g>
+</svg>
