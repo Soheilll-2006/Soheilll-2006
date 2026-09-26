@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" fill="none">
+<defs>
+  <linearGradient id="bg" x1="60" y1="20" x2="1140" y2="340" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#060B16"/>
+    <stop offset=".48" stop-color="#0A1530"/>
+    <stop offset="1" stop-color="#062839"/>
+  </linearGradient>
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0">
+    <stop stop-color="#58A6FF"/>
+    <stop offset="1" stop-color="#2DE2E6"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(980 70) rotate(130) scale(360 420)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#2DE2E6" stop-opacity=".17"/>
+    <stop offset="1" stop-color="#2DE2E6" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <path d="M32 0H0V32" stroke="#8AA3C2" stroke-opacity=".08"/>
+  </pattern>
+  <filter id="blur" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="8"/>
+  </filter>
+</defs>
+
+<rect width="1200" height="360" rx="30" fill="url(#bg)"/>
+<rect width="1200" height="360" rx="30" fill="url(#grid)"/>
+<rect width="1200" height="360" rx="30" fill="url(#glow)"/>
+<rect x="1" y="1" width="1198" height="358" rx="29" stroke="#2A4665" stroke-opacity=".65"/>
+
+<g transform="translate(70 58)">
+  <rect width="226" height="32" rx="16" fill="#0E213A" stroke="#214467"/>
+  <circle cx="19" cy="16" r="5" fill="#7EE787"/>
+  <text x="34" y="21" fill="#9EB5CF" font-size="13" font-family="Consolas,monospace" letter-spacing="1.2">SOFTWARE BUILDER // ONLINE</text>
+
+  <text x="0" y="104" fill="#FFFFFF" font-size="64" font-weight="760" font-family="Inter,Segoe UI,Arial,sans-serif" letter-spacing="2">SOHEIL</text>
+  <rect x="0" y="120" width="210" height="4" rx="2" fill="url(#cyan)"/>
+  <circle cx="192" cy="122" r="10" fill="#2DE2E6" fill-opacity=".22" filter="url(#blur)"/>
+
+  <text x="0" y="166" fill="#D2E1F2" font-size="22" font-weight="600" font-family="Inter,Segoe UI,Arial,sans-serif">Automation Engineer · Backend Tooling · Flutter</text>
+  <text x="0" y="202" fill="#8299B5" font-size="16" font-family="Consolas,monospace">I turn repetitive workflows into reliable software.</text>
+
+  <g transform="translate(0 231)">
+    <rect width="112" height="34" rx="10" fill="#101E34" stroke="#253C59"/>
+    <text x="56" y="22" text-anchor="middle" fill="#58A6FF" font-size="13" font-weight="700" font-family="Consolas,monospace">PYTHON</text>
+    <rect x="124" width="114" height="34" rx="10" fill="#101E34" stroke="#253C59"/>
+    <text x="181" y="22" text-anchor="middle" fill="#2DE2E6" font-size="13" font-weight="700" font-family="Consolas,monospace">SYSTEMS</text>
+    <rect x="250" width="104" height="34" rx="10" fill="#101E34" stroke="#253C59"/>
+    <text x="302" y="22" text-anchor="middle" fill="#7EE787" font-size="13" font-weight="700" font-family="Consolas,monospace">FLUTTER</text>
+  </g>
+</g>
+
+<g transform="translate(735 62)">
+  <rect width="395" height="236" rx="22" fill="#08111F" fill-opacity=".92" stroke="#244564"/>
+  <rect width="395" height="42" rx="22" fill="#0D1B2E"/>
+  <rect y="22" width="395" height="20" fill="#0D1B2E"/>
+  <circle cx="22" cy="21" r="5" fill="#FF7B72"/>
+  <circle cx="40" cy="21" r="5" fill="#F2CC60"/>
+  <circle cx="58" cy="21" r="5" fill="#7EE787"/>
+  <text x="78" y="26" fill="#6F86A1" font-size="12" font-family="Consolas,monospace">soheil@builder: ~/systems</text>
+
+  <g font-family="Consolas,monospace" font-size="15">
+    <text x="24" y="79" fill="#647A96">01</text>
+    <text x="58" y="79" fill="#C9D8E8">while</text>
+    <text x="106" y="79" fill="#58A6FF"> manual_work</text>
+    <text x="211" y="79" fill="#C9D8E8">:</text>
+
+    <text x="24" y="112" fill="#647A96">02</text>
+    <text x="76" y="112" fill="#2DE2E6">automate</text>
+    <text x="141" y="112" fill="#C9D8E8">(</text>
+    <text x="151" y="112" fill="#F2CC60">workflow</text>
+    <text x="215" y="112" fill="#C9D8E8">)</text>
+
+    <text x="24" y="145" fill="#647A96">03</text>
+    <text x="76" y="145" fill="#7EE787">observe</text>
+    <text x="132" y="145" fill="#C9D8E8">(</text>
+    <text x="142" y="145" fill="#F2CC60">failures</text>
+    <text x="207" y="145" fill="#C9D8E8">)</text>
+
+    <text x="24" y="178" fill="#647A96">04</text>
+    <text x="76" y="178" fill="#58A6FF">simplify</text>
+    <text x="142" y="178" fill="#C9D8E8">()</text>
+
+    <text x="24" y="211" fill="#647A96">05</text>
+    <text x="76" y="211" fill="#FF7B72">ship</text>
+    <text x="109" y="211" fill="#C9D8E8">()</text>
+    <rect x="137" y="197" width="8" height="17" rx="2" fill="#2DE2E6"/>
+  </g>
+</g>
+
+<path d="M690 90C630 90 650 145 600 145C552 145 557 192 505 192" stroke="url(#cyan)" stroke-width="1.5" stroke-opacity=".18" stroke-dasharray="5 7"/>
+<circle cx="690" cy="90" r="4" fill="#58A6FF"/>
+<circle cx="505" cy="192" r="4" fill="#2DE2E6"/>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="334" viewBox="0 0 1200 334" fill="none">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="334" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#07111F"/>
+    <stop offset="1" stop-color="#091A2D"/>
+  </linearGradient>
+  <linearGradient id="line" x1="330" y1="167" x2="870" y2="167" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#58A6FF"/>
+    <stop offset=".5" stop-color="#2DE2E6"/>
+    <stop offset="1" stop-color="#7EE787"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="334" rx="28" fill="url(#bg)"/>
+<rect x="1" y="1" width="1198" height="332" rx="27" stroke="#25415F" stroke-opacity=".8"/>
+<text x="52" y="50" fill="#FFFFFF" font-size="24" font-weight="750" font-family="Inter,Segoe UI,Arial,sans-serif">TECH MAP</text>
+<text x="52" y="74" fill="#6F86A1" font-size="13" font-family="Consolas,monospace">tools are nodes; systems are the point</text>
+
+<g stroke="#2C4A68" stroke-width="1.5" stroke-opacity=".8">
+  <path d="M600 170L235 126M600 170L230 214M600 170L390 270M600 170L420 100M600 170L790 96M600 170L965 126M600 170L970 214M600 170L808 270"/>
+</g>
+
+<g transform="translate(510 121)">
+  <rect width="180" height="98" rx="22" fill="#0F2746" stroke="url(#line)" stroke-width="2"/>
+  <text x="90" y="42" text-anchor="middle" fill="#FFFFFF" font-size="25" font-weight="800" font-family="Inter,Segoe UI,Arial,sans-serif">PYTHON</text>
+  <text x="90" y="68" text-anchor="middle" fill="#8EA5BF" font-size="12" font-family="Consolas,monospace">core language</text>
+</g>
+
+<g font-family="Inter,Segoe UI,Arial,sans-serif">
+  <g transform="translate(116 96)"><rect width="238" height="58" rx="16" fill="#0C1C31" stroke="#284664"/><text x="20" y="25" fill="#58A6FF" font-size="15" font-weight="700">Playwright + Selenium</text><text x="20" y="44" fill="#7890AB" font-size="12">browser automation</text></g>
+  <g transform="translate(116 186)"><rect width="224" height="58" rx="16" fill="#0C1C31" stroke="#284664"/><text x="20" y="25" fill="#2DE2E6" font-size="15" font-weight="700">Asyncio + aiohttp</text><text x="20" y="44" fill="#7890AB" font-size="12">concurrent pipelines</text></g>
+  <g transform="translate(290 244)"><rect width="214" height="58" rx="16" fill="#0C1C31" stroke="#284664"/><text x="20" y="25" fill="#7EE787" font-size="15" font-weight="700">Postgres + SQLite</text><text x="20" y="44" fill="#7890AB" font-size="12">state &amp; persistence</text></g>
+  <g transform="translate(318 74)"><rect width="190" height="58" rx="16" fill="#0C1C31" stroke="#284664"/><text x="20" y="25" fill="#F2CC60" font-size="15" font-weight="700">FastAPI</text><text x="20" y="44" fill="#7890AB" font-size="12">service layer</text></g>
+
+  <g transform="translate(714 70)"><rect width="194" height="58" rx="16" fill="#0C1C31" stroke="#284664"/><text x="20" y="25" fill="#58A6FF" font-size="15" font-weight="700">Flutter + Dart</text><text x="20" y="44" fill="#7890AB" font-size="12">mobile products</text></g>
+  <g transform="translate(864 96)"><rect width="220" height="58" rx="16" fill="#0C1C31" stroke="#284664"/><text x="20" y="25" fill="#2DE2E6" font-size="15" font-weight="700">REST + GraphQL</text><text x="20" y="44" fill="#7890AB" font-size="12">integration surface</text></g>
+  <g transform="translate(866 186)"><rect width="220" height="58" rx="16" fill="#0C1C31" stroke="#284664"/><text x="20" y="25" fill="#7EE787" font-size="15" font-weight="700">Docker + Linux</text><text x="20" y="44" fill="#7890AB" font-size="12">runtime &amp; deployment</text></g>
+  <g transform="translate(704 244)"><rect width="224" height="58" rx="16" fill="#0C1C31" stroke="#284664"/><text x="20" y="25" fill="#F2CC60" font-size="15" font-weight="700">GitHub Actions</text><text x="20" y="44" fill="#7890AB" font-size="12">shipping workflows</text></g>
+</g>
+
+<g fill="#2DE2E6">
+  <circle cx="600" cy="170" r="4"/><circle cx="235" cy="126" r="3"/><circle cx="230" cy="214" r="3"/><circle cx="390" cy="270" r="3"/><circle cx="420" cy="100" r="3"/><circle cx="790" cy="96" r="3"/><circle cx="965" cy="126" r="3"/><circle cx="970" cy="214" r="3"/><circle cx="808" cy="270" r="3"/>
+</g>
+</svg>
